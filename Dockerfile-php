@@ -1,0 +1,15 @@
+FROM php:7.4-fpm
+RUN apt-get -y update \
+    && apt-get install -y libicu-dev \
+    && docker-php-ext-configure intl \
+    && docker-php-ext-install intl mysqli pdo pdo_mysql
+
+RUN apt-get install zip -y \
+    && apt-get install wget -y \
+    && apt-get install git -y
+RUN wget https://get.symfony.com/cli/installer -O - | bash \
+    && mv /root/.symfony/bin/symfony /usr/local/bin/symfony
+RUN curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer
+RUN echo 'alias ll="ls -la --color=auto"' >> ~/.bashrc
+COPY ./project /var/www/project
+WORKDIR /var/www/project/

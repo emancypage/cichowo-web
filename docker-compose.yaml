@@ -1,0 +1,39 @@
+version: '3'
+
+services:
+  web:
+    image: nginx:1.17
+    ports:
+    - 8085:80
+    volumes:
+    - ./nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
+    - ./project:/var/www/project
+
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile-php
+    environment:
+      MYSQL_PORT: ${MYSQL_PORT}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    volumes:
+    - ./project:/var/www/project
+
+  database:
+    image: mariadb/server:10.4
+    environment:
+      MYSQL_PORT: ${MYSQL_PORT}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    volumes:
+    - mysql_content:/var/lib/mysql
+    ports:
+      - ${MYSQL_PORT}:3306
+
+volumes:
+  mysql_content:
