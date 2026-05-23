@@ -59,7 +59,8 @@ The house logo appears in three places: SVG in nav (index.html and blog/index.ht
 
 ## Content conventions
 
-- All website copy is in Polish. Use `&nbsp;` before single-letter conjunctions and short prepositions ("i", "w", "z", "o", "do") — orphan prevention.
+- All website copy is in Polish.
+- **Do not use `&nbsp;` in HTML.** Use regular spaces only. The repo has a linter/formatter that strips `&nbsp;` entities, so adding them is pointless — they get removed on save. If orphan-prevention before single-letter conjunctions ("i", "w", "z", "o", "do") is needed, handle it in CSS (e.g. `text-wrap: pretty`) or accept the orphan.
 - Polish address: `64-010 Cichowo, Osiedle leśne 5` (alternatively "Zaścianek 5" — only as an informational alias in parentheses).
 - Lake: always "Jezioro Cichowo" (not "Mórka", not "Wielkie").
 - Phone: `692 497 160` (links as `tel:+48692497160`).
