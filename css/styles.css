@@ -1072,6 +1072,8 @@ a { color: inherit; }
   text-underline-offset: 3px;
 }
 .post-page__body a:hover { text-decoration-color: var(--rust); }
+.post-page__body a.btn-cta { color: var(--bg); text-decoration: none; }
+.post-page__body a.btn-cta:hover { color: var(--bg); }
 .post-page__body blockquote {
   margin: 32px 0;
   padding: 20px 24px;
