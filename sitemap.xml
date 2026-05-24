@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://cicholas.pl/</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://cicholas.pl/assets/cicho-las-exterior.webp</image:loc>
+      <image:caption>Drewniany domek Cicho Las w Cichowie nad Jeziorem Cichowo</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cicholas.pl/assets/cicho-las-taras.webp</image:loc>
+      <image:caption>Zadaszony taras domku Cicho Las</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://cicholas.pl/blog/</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cicholas.pl/blog/atrakcje-cichowo-gmina-krzywin/</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://cicholas.pl/assets/blog/kosciol-mikolaja-krzywin-1.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://cicholas.pl/blog/jezioro-cichowo-aktywnosci-wokol/</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://cicholas.pl/assets/blog/cichowo-5.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://cicholas.pl/blog/klasztor-lubin-benedyktyni-historia/</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://cicholas.pl/assets/blog/lubin-opactwo-1.webp</image:loc>
+    </image:image>
+  </url>
+</urlset>
