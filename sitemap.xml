@@ -48,4 +48,10 @@
       <image:loc>https://cicholas.pl/assets/blog/lubin-opactwo-1.webp</image:loc>
     </image:image>
   </url>
+  <url>
+    <loc>https://cicholas.pl/blog/dwor-bukowieckich-cichowo/</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
