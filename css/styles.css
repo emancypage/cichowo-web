@@ -372,6 +372,71 @@ a { color: inherit; }
   font-weight: 500;
 }
 
+/* ===== Nocleg / spanie ===== */
+.sleep {
+  background: var(--bg-warm);
+  padding: 112px 56px;
+}
+.sleep__head {
+  max-width: 760px;
+  margin-bottom: 56px;
+}
+.sleep__lead {
+  font-size: 18px;
+  line-height: 1.65;
+  color: var(--ink-soft);
+  margin: 24px 0 0;
+}
+.sleep__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.sleep__card {
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 18px;
+  padding: 32px 28px;
+}
+.sleep__card-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(166, 74, 43, .12);
+  color: var(--rust);
+  margin-bottom: 20px;
+}
+.sleep__card-icon svg { width: 24px; height: 24px; }
+.sleep__card-title {
+  font-family: var(--serif);
+  font-size: 23px;
+  line-height: 1.12;
+  font-weight: 400;
+  color: var(--ink);
+  margin: 0 0 12px;
+}
+.sleep__card-text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin: 0;
+}
+.sleep__note {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 15px;
+  color: var(--ink-soft);
+}
+
 /* ===== Gallery ===== */
 .gallery {
   background: var(--bg);
@@ -1194,6 +1259,7 @@ a { color: inherit; }
   .about__sticky { position: static; }
   .hero__media { height: 520px; }
   .amenities__grid { grid-template-columns: repeat(2, 1fr); }
+  .sleep__grid { grid-template-columns: repeat(2, 1fr); }
   .posts-3, .post-grid { grid-template-columns: repeat(2, 1fr); }
   .footer__grid { grid-template-columns: 1fr 1fr; }
   .featured { grid-template-columns: 1fr; }
@@ -1210,7 +1276,7 @@ a { color: inherit; }
   .nav__links { order: 3; width: 100%; gap: 16px; overflow-x: auto; padding-bottom: 4px; }
   .nav__phone { display: none; }
   .btn-nav { padding: 8px 12px; font-size: 12px; }
-  .hero, .about, .gallery, .amenities, .blog-teaser, .contact, .blog-header, .faq { padding-left: 20px; padding-right: 20px; }
+  .hero, .about, .sleep, .gallery, .amenities, .blog-teaser, .contact, .blog-header, .faq { padding-left: 20px; padding-right: 20px; }
   .filters { padding: 24px 20px 0; top: 64px; }
   .hero { padding-top: 48px; padding-bottom: 56px; }
   .hero__media { height: 420px; }
@@ -1218,7 +1284,8 @@ a { color: inherit; }
   .hero__img-b { width: 70%; height: 220px; }
   .hero__rating { bottom: 40px; padding: 10px 14px; }
   .hero__stats { grid-template-columns: repeat(2, 1fr); gap: 20px; }
-  .about, .gallery, .amenities, .blog-teaser, .contact, .faq { padding-top: 72px; padding-bottom: 72px; }
+  .about, .sleep, .gallery, .amenities, .blog-teaser, .contact, .faq { padding-top: 72px; padding-bottom: 72px; }
+  .sleep__grid { grid-template-columns: 1fr; }
   .faq__item { padding: 0 20px; }
   .faq__item summary { font-size: 17px; padding: 16px 0; }
   .amenities__grid { grid-template-columns: 1fr; }
