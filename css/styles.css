@@ -1346,7 +1346,8 @@ a { color: inherit; }
   .nav { padding: 16px 20px; flex-wrap: wrap; gap: 12px; }
   .nav__links { order: 3; width: 100%; gap: 16px; overflow-x: auto; padding-bottom: 4px; }
   .nav__phone { display: none; }
-  .btn-nav { padding: 8px 12px; font-size: 12px; }
+  .nav__right { gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+  .btn-nav, .btn-cta, .btn-share { padding: 8px 12px; font-size: 12px; white-space: nowrap; }
   .btn-share { display: inline-flex; }
   .hero, .about, .sleep, .gallery, .amenities, .blog-teaser, .contact, .blog-header, .faq { padding-left: 20px; padding-right: 20px; }
   .filters { padding: 24px 20px 0; top: 64px; }
