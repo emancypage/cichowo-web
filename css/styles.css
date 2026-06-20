@@ -116,6 +116,77 @@ a { color: inherit; }
   gap: 8px;
 }
 .btn-nav:hover { transform: translateY(-1px); background: var(--ink); color: var(--bg); }
+.btn-share { cursor: pointer; font-family: inherit; }
+
+.share-panel {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.share-panel[hidden] { display: none; }
+.share-panel__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 22, 16, .45);
+}
+.share-panel__card {
+  position: relative;
+  width: min(360px, calc(100vw - 40px));
+  background: var(--bg);
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 20px 60px rgba(26, 22, 16, .25);
+  animation: sharePop .16s ease;
+}
+@keyframes sharePop {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.share-panel__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.share-panel__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+}
+.share-panel__close {
+  background: none;
+  border: none;
+  font-size: 17px;
+  line-height: 1;
+  color: var(--ink-soft);
+  cursor: pointer;
+  padding: 4px;
+}
+.share-panel__close:hover { color: var(--ink); }
+.share-panel__links { display: grid; gap: 8px; }
+.share-opt {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  background: transparent;
+  color: var(--ink);
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background .15s ease, border-color .15s ease;
+}
+.share-opt:hover { background: var(--bg-warm); border-color: var(--ink); }
+.share-opt svg { color: var(--rust-soft); flex-shrink: 0; }
 
 /* ===== Shared section bits ===== */
 .wrap { max-width: 1280px; margin: 0 auto; }

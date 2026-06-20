@@ -130,9 +130,58 @@
   <div class="nav__right">
     <a href="tel:+48692497160" class="nav__phone">☎ 692 497 160</a>
     <a href="https://www.google.com/maps/dir/?api=1&destination=64-010%20Cichowo%2C%20Osiedle%20le%C5%9Bne%205" target="_blank" rel="noopener" class="btn-nav">Nawiguj <span aria-hidden="true">➤</span></a>
+    <button type="button" class="btn-nav btn-share" id="shareBtn" aria-haspopup="dialog" aria-expanded="false">
+      Udostępnij
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <circle cx="18" cy="5" r="2.4" stroke="currentColor" stroke-width="1.7"/>
+        <circle cx="6" cy="12" r="2.4" stroke="currentColor" stroke-width="1.7"/>
+        <circle cx="18" cy="19" r="2.4" stroke="currentColor" stroke-width="1.7"/>
+        <path d="M8.1 10.9 15.9 6.1 M8.1 13.1 15.9 17.9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+      </svg>
+    </button>
     <a href="tel:+48692497160" class="btn-cta">Zapytaj o termin <span aria-hidden="true">→</span></a>
   </div>
 </header>
+
+<div class="share-panel" id="sharePanel" hidden>
+  <div class="share-panel__backdrop" data-share-close></div>
+  <div class="share-panel__card" role="dialog" aria-modal="true" aria-label="Udostępnij stronę">
+    <div class="share-panel__head">
+      <span class="share-panel__title">Udostępnij Cicho Las</span>
+      <button type="button" class="share-panel__close" data-share-close aria-label="Zamknij">✕</button>
+    </div>
+    <div class="share-panel__links">
+      <a class="share-opt" id="shareWhatsApp" target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M3.5 20.5 4.8 16.4 A8 8 0 1 1 7.6 19.2 Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+          <path d="M9 8.5 C9 11 13 15 15.5 15 C16.4 15 16.8 14.2 16.8 13.6 L14.9 12.6 L14 13.6 C13 13.2 11.8 12 11.4 11 L12.4 10.1 L11.4 8.2 C10.8 8.2 10 8.6 9 8.5 Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+        </svg>
+        <span class="share-opt__label">WhatsApp</span>
+      </a>
+      <a class="share-opt" id="shareSms">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 5 H20 A1 1 0 0 1 21 6 V15 A1 1 0 0 1 20 16 H9 L5 19.5 V16 H4 A1 1 0 0 1 3 15 V6 A1 1 0 0 1 4 5 Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+        </svg>
+        <span class="share-opt__label">SMS</span>
+      </a>
+      <a class="share-opt" id="shareMail">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <rect x="3" y="5" width="18" height="14" rx="1.5" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M4 6.5 12 12.5 20 6.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="share-opt__label">E-mail</span>
+      </a>
+      <button type="button" class="share-opt" id="shareCopy">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M9.5 14.5 14.5 9.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+          <path d="M11 8 12.5 6.5 A3.2 3.2 0 0 1 17 11 L15.5 12.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13 16 11.5 17.5 A3.2 3.2 0 0 1 7 13 L8.5 11.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="share-opt__label">Kopiuj link</span>
+      </button>
+    </div>
+  </div>
+</div>
 
 <section id="domek" class="hero">
   <div class="wrap hero__grid">
@@ -596,5 +645,6 @@
 
 <script src="js/filters.js" defer></script>
 <script src="js/weather.js" defer></script>
+<script src="js/share.js" defer></script>
 </body>
 </html>
