@@ -117,6 +117,7 @@ a { color: inherit; }
 }
 .btn-nav:hover { transform: translateY(-1px); background: var(--ink); color: var(--bg); }
 .btn-share { display: none; cursor: pointer; font-family: inherit; }
+.btn-ico { display: none; }
 
 .share-panel {
   position: fixed;
@@ -1343,12 +1344,23 @@ a { color: inherit; }
 }
 
 @media (max-width: 720px) {
-  .nav { padding: 16px 20px; flex-wrap: wrap; gap: 12px; }
+  .nav { padding: 12px 20px; flex-wrap: wrap; gap: 8px; }
   .nav__links { order: 3; width: 100%; gap: 16px; overflow-x: auto; padding-bottom: 4px; }
   .nav__phone { display: none; }
-  .nav__right { gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
-  .btn-nav, .btn-cta, .btn-share { padding: 8px 12px; font-size: 12px; white-space: nowrap; }
+  .nav__brand-name { font-size: 20px; }
+  .nav__right { gap: 8px; flex-wrap: nowrap; }
+  .btn-nav { padding: 8px 12px; font-size: 12px; white-space: nowrap; }
   .btn-share { display: inline-flex; }
+  .btn-compact {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    justify-content: center;
+    border-radius: 999px;
+  }
+  .btn-compact .btn-txt { display: none; }
+  .btn-compact .btn-ico { display: inline-block; }
+  .btn-cta { padding: 9px 14px; font-size: 12px; white-space: nowrap; gap: 6px; }
   .hero, .about, .sleep, .gallery, .amenities, .blog-teaser, .contact, .blog-header, .faq { padding-left: 20px; padding-right: 20px; }
   .filters { padding: 24px 20px 0; top: 64px; }
   .hero { padding-top: 48px; padding-bottom: 56px; }
