@@ -116,7 +116,7 @@ a { color: inherit; }
   gap: 8px;
 }
 .btn-nav:hover { transform: translateY(-1px); background: var(--ink); color: var(--bg); }
-.btn-share { cursor: pointer; font-family: inherit; }
+.btn-share { display: none; cursor: pointer; font-family: inherit; }
 
 .share-panel {
   position: fixed;
@@ -1347,6 +1347,7 @@ a { color: inherit; }
   .nav__links { order: 3; width: 100%; gap: 16px; overflow-x: auto; padding-bottom: 4px; }
   .nav__phone { display: none; }
   .btn-nav { padding: 8px 12px; font-size: 12px; }
+  .btn-share { display: inline-flex; }
   .hero, .about, .sleep, .gallery, .amenities, .blog-teaser, .contact, .blog-header, .faq { padding-left: 20px; padding-right: 20px; }
   .filters { padding: 24px 20px 0; top: 64px; }
   .hero { padding-top: 48px; padding-bottom: 56px; }
