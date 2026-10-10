@@ -34,7 +34,9 @@ Palette tokens (defined in `:root` in `css/styles.css`):
 - `--moss` — secondary accent
 - `--rule` — separators
 
-Sections on the main page (order, each styled separately in `css/styles.css`): nav · hero (mosaic 2 photos + rating chip + weather chip) · about · gallery (filter chips + 6-tile asymmetric grid) · amenities (dark, 10 cards with SVG icons) · blog-teaser · contact (3 rows: phone, navigate, email + map) · footer.
+Sections on the main page (order, each styled separately in `css/styles.css`): nav · hero (mosaic 2 photos + rating chip + weather chip) · about · season (`#jesien`, dark, seasonal — currently autumn) · gallery (filter chips + 6-tile asymmetric grid) · sleep · amenities (dark, 10 cards with SVG icons) · faq · blog-teaser · contact (3 rows: phone, navigate, email + map) · footer.
+
+Seasonal content (currently autumn): hero badge/title/lead, the `.season` section, the blog-teaser title and its 3 posts, contact title, the autumn FAQ entry. When the season changes, update these together; the `.season` section and its CSS can be removed outright.
 
 Responsive breakpoints: 1080px and 720px.
 
@@ -46,7 +48,7 @@ Only two modules, both loaded `defer`:
 - **`js/weather.js`** — Open-Meteo (no API key), current temperature + WMO weather code mapped to an icon. Cache in `localStorage["cichoWeather"]` with 30 min TTL:
   - Fresh cache (<30 min) → render, no fetch
   - Stale cache → render immediately + background fetch
-  - No cache and fetch failed → leaves the static HTML text (fallback `+22°C`)
+  - No cache and fetch failed → leaves the static HTML text (fallback `+12°C`, adjust per season)
   - Cichowo lat/lon: `51.98, 16.80`
 
 If you add JS: stick to vanilla, no bundler, load via `<script src="/js/..." defer>`.

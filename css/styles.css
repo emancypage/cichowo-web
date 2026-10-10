@@ -223,6 +223,7 @@ a { color: inherit; }
   border-radius: 999px;
   margin-bottom: 32px;
   background: var(--card);
+  text-decoration: none;
 }
 .hero__badge-pill {
   background: var(--moss);
@@ -234,6 +235,7 @@ a { color: inherit; }
   padding: 4px 10px;
   border-radius: 999px;
 }
+.hero__badge-pill--season { background: var(--rust); }
 .hero__badge-text {
   font-size: 13px;
   color: var(--ink-soft);
@@ -444,6 +446,93 @@ a { color: inherit; }
   font-weight: 500;
 }
 
+/* ===== Sezon (dark, sekcja sezonowa — obecnie jesień) ===== */
+.season {
+  background: var(--bg-ink);
+  color: var(--bg);
+  padding: 112px 56px;
+}
+.season__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: center;
+}
+.season__eyebrow { color: var(--rust-soft); }
+.season__title {
+  font-family: var(--serif);
+  font-size: clamp(42px, 5.5vw, 72px);
+  line-height: 1;
+  letter-spacing: -0.025em;
+  margin: 0;
+  font-weight: 400;
+  text-wrap: balance;
+}
+.season__lead {
+  font-size: 17px;
+  line-height: 1.65;
+  color: rgba(251, 248, 241, .7);
+  margin: 24px 0 0;
+  max-width: 520px;
+}
+.season__list {
+  list-style: none;
+  margin: 40px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 22px;
+}
+.season__item {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+.season__item .season__icon { margin-bottom: 0; }
+.season__item-h {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 2px 0 4px;
+}
+.season__item-p {
+  font-size: 14px;
+  line-height: 1.55;
+  color: rgba(251, 248, 241, .6);
+  margin: 0;
+}
+.season__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--bg);
+  text-decoration: none;
+  border-bottom: 2px solid var(--rust-soft);
+  padding-bottom: 4px;
+}
+.season__link:hover { color: var(--rust-soft); }
+.season__media {
+  position: relative;
+  height: 600px;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 40px 80px -40px rgba(0, 0, 0, .6);
+}
+.season__media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.season__media-caption {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  background: var(--rust);
+  color: var(--bg);
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
 /* ===== Nocleg / spanie ===== */
 .sleep {
   background: var(--bg-warm);
@@ -645,7 +734,7 @@ a { color: inherit; }
   transition: background .2s ease, transform .2s ease;
 }
 .amenity:hover { background: rgba(251, 248, 241, .07); transform: translateY(-2px); }
-.amenity__num {
+.amenity__num, .season__icon {
   width: 44px;
   height: 44px;
   border-radius: 12px;
@@ -656,7 +745,7 @@ a { color: inherit; }
   justify-content: center;
   margin-bottom: 18px;
 }
-.amenity__num svg { width: 22px; height: 22px; }
+.amenity__num svg, .season__icon svg { width: 22px; height: 22px; }
 .amenity__label {
   font-size: 16px;
   font-weight: 600;
@@ -1324,12 +1413,13 @@ a { color: inherit; }
 
 /* ===== Responsive ===== */
 @media (max-width: 1080px) {
-  .hero__grid, .about__grid, .amenities__head, .contact__card, .blog-header__grid {
+  .hero__grid, .about__grid, .season__grid, .amenities__head, .contact__card, .blog-header__grid {
     grid-template-columns: 1fr;
     gap: 40px;
   }
   .about__sticky { position: static; }
   .hero__media { height: 520px; }
+  .season__media { height: 440px; }
   .amenities__grid { grid-template-columns: repeat(2, 1fr); }
   .sleep__grid { grid-template-columns: repeat(2, 1fr); }
   .posts-3, .post-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1361,7 +1451,7 @@ a { color: inherit; }
   .btn-compact .btn-txt { display: none; }
   .btn-compact .btn-ico { display: inline-block; }
   .btn-cta { padding: 9px 14px; font-size: 12px; white-space: nowrap; gap: 6px; }
-  .hero, .about, .sleep, .gallery, .amenities, .blog-teaser, .contact, .blog-header, .faq { padding-left: 20px; padding-right: 20px; }
+  .hero, .about, .season, .sleep, .gallery, .amenities, .blog-teaser, .contact, .blog-header, .faq { padding-left: 20px; padding-right: 20px; }
   .filters { padding: 24px 20px 0; top: 64px; }
   .hero { padding-top: 48px; padding-bottom: 56px; }
   .hero__media { height: 420px; }
@@ -1369,7 +1459,8 @@ a { color: inherit; }
   .hero__img-b { width: 70%; height: 220px; }
   .hero__rating { bottom: 40px; padding: 10px 14px; }
   .hero__stats { grid-template-columns: repeat(2, 1fr); gap: 20px; }
-  .about, .sleep, .gallery, .amenities, .blog-teaser, .contact, .faq { padding-top: 72px; padding-bottom: 72px; }
+  .about, .season, .sleep, .gallery, .amenities, .blog-teaser, .contact, .faq { padding-top: 72px; padding-bottom: 72px; }
+  .season__media { height: 280px; }
   .sleep__grid { grid-template-columns: 1fr; }
   .faq__item { padding: 0 20px; }
   .faq__item summary { font-size: 17px; padding: 16px 0; }
