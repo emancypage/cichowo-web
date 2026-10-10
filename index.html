@@ -37,7 +37,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="preload" as="image" href="/assets/cicho-las-exterior.webp" fetchpriority="high" />
+<link rel="preload" as="image" href="/assets/gallery/wieczorem.webp" fetchpriority="high" />
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/css/styles.css" />
 
@@ -192,18 +192,18 @@
 <section id="domek" class="hero">
   <div class="wrap hero__grid">
     <div>
-      <div class="hero__badge">
-        <span class="hero__badge-pill">Wolne</span>
-        <span class="hero__badge-text">terminy czerwiec — wrzesień  →</span>
-      </div>
+      <a href="#jesien" class="hero__badge">
+        <span class="hero__badge-pill hero__badge-pill--season">Jesień</span>
+        <span class="hero__badge-text">weekendy przy kominku  →</span>
+      </a>
       <h1 class="hero__title">
         Drewniany domek nad Jeziorem Cichowo,<br />
-        <span class="italic-rust">cisza w cenie.</span>
+        <span class="italic-rust">jesień przy kominku.</span>
       </h1>
       <p class="hero__lead">
         Cicho Las to nocleg w Cichowie — drewniany domek letniskowy do wynajęcia (Wielkopolska, gmina Krzywiń),
         6 minut spacerem od Jeziora Cichowo. Pięć miejsc do spania, własny ogród, taras, kominek.
-        Dla rodzin, par i psów. Cały rok.
+        Jesienią: mgła nad jeziorem o świcie, grzyby w lesie za furtką i drewno do kominka w cenie. Dla rodzin, par i psów.
       </p>
       <div class="hero__cta">
         <a href="#kontakt" class="btn-primary">Sprawdź dostępność <span aria-hidden="true">→</span></a>
@@ -231,8 +231,8 @@
     <div class="hero__media">
       <div class="hero__img-a">
         <picture>
-          <source srcset="/assets/cicho-las-exterior.webp" type="image/webp" />
-          <img src="/assets/cicho-las-exterior.png" alt="Drewniany domek Cicho Las w Cichowie od strony ogrodu" width="893" height="504" fetchpriority="high" decoding="async" />
+          <source srcset="/assets/gallery/wieczorem.webp" type="image/webp" />
+          <img src="/assets/gallery/wieczorem.jpg" alt="Drewniany domek Cicho Las jesienią o zmierzchu — światło na werandzie, liście w ogrodzie" width="1600" height="900" fetchpriority="high" decoding="async" />
         </picture>
       </div>
       <div class="hero__img-b">
@@ -248,7 +248,7 @@
           <div class="hero__rating-meta">32 opinie gości</div>
         </div>
       </div>
-      <div class="hero__weather" aria-label="Aktualna pogoda w Cichowie">● dziś +22°C w Cichowie</div>
+      <div class="hero__weather" aria-label="Aktualna pogoda w Cichowie">● dziś +12°C w Cichowie</div>
     </div>
   </div>
 </section>
@@ -274,6 +274,58 @@
         <div class="about__fact"><div class="about__fact-k">Maksymalnie</div><div class="about__fact-v">Do 5 osób + pies</div></div>
         <div class="about__fact"><div class="about__fact-k">Sezon</div><div class="about__fact-v">Cały rok</div></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sekcja sezonowa (jesień). Po sezonie usuń ją razem ze stylami .season w css/styles.css. -->
+<section id="jesien" class="season" aria-labelledby="season-title">
+  <div class="wrap season__grid">
+    <div>
+      <div class="eyebrow season__eyebrow">Sezon · jesień</div>
+      <h2 class="season__title" id="season-title">Jesień w Cicho Las,<br /><span class="italic-rust-soft">najcichsza pora roku.</span></h2>
+      <p class="season__lead">
+        Letnicy wyjechali, las wokół Jeziora Cichowo przebiera się w rdzę i złoto, a w domku od progu jest ciepło.
+        Wrzesień, październik i listopad to tygodnie na długie spacery, grzyby i wieczory przy ogniu.
+      </p>
+      <ul class="season__list">
+        <li class="season__item">
+          <div class="season__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6h8"/><path d="M4 10h16"/><path d="M2 14h14"/><path d="M6 18h16"/></svg></div>
+          <div>
+            <div class="season__item-h">Mgła nad jeziorem</div>
+            <p class="season__item-p">Sześć minut spacerem, kawa z termosu i pusty pomost, zanim słońce przebije się zza drzew.</p>
+          </div>
+        </li>
+        <li class="season__item">
+          <div class="season__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 7 0 0 1 18 0z"/><path d="M9.5 12v5.5a2.5 2.5 0 0 0 5 0V12"/><circle cx="9" cy="8.5" r=".8"/><circle cx="14.5" cy="7.5" r=".8"/></svg></div>
+          <div>
+            <div class="season__item-h">Grzyby za furtką</div>
+            <p class="season__item-p">Bory Nadleśnictwa Kościan zaczynają się kilka minut od domku. Wiklinowy kosz czeka przy wejściu.</p>
+          </div>
+        </li>
+        <li class="season__item">
+          <div class="season__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19c0-8 5-13.5 15-15 0 10-6 15-14 15z"/><path d="M5 19l8-8"/></svg></div>
+          <div>
+            <div class="season__item-h">Park w kolorach rdzy</div>
+            <p class="season__item-p">Tuż obok domku park dworski z 350-letnią lipą benedyktyńską i alejkami pod liśćmi.</p>
+          </div>
+        </li>
+        <li class="season__item">
+          <div class="season__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c0 4 4 5 4 10a4 4 0 0 1-8 0c0-3 2-3 2-6 1 2 2 3 2 4 0-3-1-5 0-8z"/></svg></div>
+          <div>
+            <div class="season__item-h">Wieczory przy kominku</div>
+            <p class="season__item-p">Drewno w cenie, ogrzewanie podłogowe i zadaszony taras na deszczowe wieczory z herbatą.</p>
+          </div>
+        </li>
+      </ul>
+      <a href="/blog/cichowo-jesienia-weekend-z-kominkiem/" class="season__link">Jak wygląda jesienny weekend w Cichowie <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="season__media">
+      <picture>
+        <source srcset="/assets/gallery/jezioro-2.webp" type="image/webp" />
+        <img src="/assets/gallery/jezioro-2.jpg" alt="Jezioro Cichowo o zmierzchu — spokojna tafla wody otoczona lasem" width="1600" height="900" loading="lazy" decoding="async" />
+      </picture>
+      <div class="season__media-caption">Jezioro Cichowo · 6 min spacerem od domku</div>
     </div>
   </div>
 </section>
@@ -373,7 +425,7 @@
       </article>
     </div>
     <div class="sleep__note">
-      <span>Pościel i ręczniki w cenie. Ogrzewanie podłogowe i kominek — śpisz ciepło także zimą.</span>
+      <span>Pościel i ręczniki w cenie. Ogrzewanie podłogowe i kominek — śpisz ciepło także jesienią i zimą.</span>
       <a href="#kontakt" class="btn-cta">Zapytaj o termin <span aria-hidden="true">→</span></a>
     </div>
   </div>
@@ -385,7 +437,7 @@
       <h2 class="amenities__title">Wszystko,<br /><span class="italic-rust-soft">czego potrzeba.</span></h2>
       <p class="amenities__lead">
         Pościel, ręczniki, pełna kuchnia, drewno do kominka i Wi-Fi.
-        Nie zapomnij dobrego humoru i szczoteczki do zębów — resztę mamy.
+        Nie zapomnij ciepłych skarpet, dobrego humoru i szczoteczki do zębów — resztę mamy.
       </p>
     </div>
     <div class="amenities__grid">
@@ -397,7 +449,7 @@
       <div class="amenity"><div class="amenity__num" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4c0 3 3 4 3 8a3 3 0 0 1-6 0c0-2 1-2 1-4 1 1 2 2 2 3"/><path d="M4 18 L20 18"/><path d="M6 20 L18 16"/><path d="M6 16 L18 20"/></svg></div><div class="amenity__label">Grill i ognisko</div><div class="amenity__note">Miejsce na ognisko i grilla w ogrodzie, drewno w cenie</div></div>
       <div class="amenity"><div class="amenity__num" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 7v10"/><path d="M9 7h4a2.5 2.5 0 0 1 0 5H9"/></svg></div><div class="amenity__label">Parking</div><div class="amenity__note">Bezpłatny, przy posesji</div></div>
       <div class="amenity"><div class="amenity__num" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="10" r="1.8"/><circle cx="10" cy="6" r="1.8"/><circle cx="14" cy="6" r="1.8"/><circle cx="18" cy="10" r="1.8"/><path d="M12 11c-3 0-5 3-5 5a2 2 0 0 0 2 2c1 0 2-1 3-1s2 1 3 1a2 2 0 0 0 2-2c0-2-2-5-5-5z"/></svg></div><div class="amenity__label">Pies mile widziany</div><div class="amenity__note">Z ogrodzonym ogrodem</div></div>
-      <div class="amenity"><div class="amenity__num" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M4.5 7.5l15 9"/><path d="M4.5 16.5l15-9"/><path d="M9 5l3 1.5 3-1.5"/><path d="M9 19l3-1.5 3 1.5"/><path d="M4 10.5l2 .5-.5 2"/><path d="M20 13.5l-2-.5.5-2"/><path d="M4 13.5l2-.5-.5-2"/><path d="M20 10.5l-2 .5.5 2"/></svg></div><div class="amenity__label">Klimatyzacja</div><div class="amenity__note">Na upalne dni i ciepłe noce</div></div>
+      <div class="amenity"><div class="amenity__num" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M4.5 7.5l15 9"/><path d="M4.5 16.5l15-9"/><path d="M9 5l3 1.5 3-1.5"/><path d="M9 19l3-1.5 3 1.5"/><path d="M4 10.5l2 .5-.5 2"/><path d="M20 13.5l-2-.5.5-2"/><path d="M4 13.5l2-.5-.5-2"/><path d="M20 10.5l-2 .5.5 2"/></svg></div><div class="amenity__label">Klimatyzacja</div><div class="amenity__note">Chłodzi latem, grzeje w chłodne noce</div></div>
       <div class="amenity"><div class="amenity__num" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19h18"/><path d="M6 15c1-1 1-2 0-3s-1-2 0-3"/><path d="M12 15c1-1 1-2 0-3s-1-2 0-3"/><path d="M18 15c1-1 1-2 0-3s-1-2 0-3"/></svg></div><div class="amenity__label">Ogrzewanie podłogowe</div><div class="amenity__note">Na zimne wieczory, ciepło od podłogi</div></div>
     </div>
   </div>
@@ -433,6 +485,10 @@
       <details class="faq__item">
         <summary>Czy domek jest czynny zimą?</summary>
         <p>Tak, <strong>cały rok</strong>. W zimie pracuje kominek, ogrzewanie podłogowe i klimatyzacja z funkcją grzania — komfort niezależnie od temperatury na zewnątrz. Zimowy weekend nad zamarzniętym jeziorem to nasz najbardziej niedoceniany sezon.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Czy warto przyjechać jesienią?</summary>
+        <p>Zdecydowanie — to nasza ulubiona pora roku. Wrzesień i październik to <strong>pełnia grzybobrania</strong> w lasach wokół Cichowa, nad jeziorem o świcie wisi mgła, a w domku czeka kominek z drewnem w cenie i ogrzewanie podłogowe. Jest też dużo ciszej niż latem. Więcej we wpisie: <a href="/blog/cichowo-jesienia-weekend-z-kominkiem/">Cichowo jesienią</a>.</p>
       </details>
       <details class="faq__item">
         <summary>Co jest w cenie wynajmu?</summary>
@@ -487,6 +543,11 @@
     },
     {
       "@type": "Question",
+      "name": "Czy warto przyjechać do Cichowa jesienią?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Tak, to nasza ulubiona pora roku. Wrzesień i październik to pełnia grzybobrania w lasach wokół Cichowa, nad jeziorem o świcie wisi mgła, a w domku czeka kominek z drewnem w cenie i ogrzewanie podłogowe. Jest też dużo ciszej niż latem." }
+    },
+    {
+      "@type": "Question",
       "name": "Co jest w cenie wynajmu?",
       "acceptedAnswer": { "@type": "Answer", "text": "Pościel, ręczniki, drewno do kominka i ogniska, Wi-Fi w całym domku, bezpłatny parking, w pełni wyposażona kuchnia." }
     },
@@ -509,7 +570,7 @@
     <div class="blog-teaser__head">
       <div>
         <div class="eyebrow">Blog</div>
-        <h2 class="section-title">Co się <span class="italic-rust">dzieje</span> w Cichowie?</h2>
+        <h2 class="section-title">Co się <span class="italic-rust">dzieje</span> w Cichowie jesienią?</h2>
       </div>
       <a href="/blog/" class="link-arrow">Wszystkie wpisy <span aria-hidden="true">→</span></a>
     </div>
@@ -523,22 +584,22 @@
         <p class="post-card__excerpt">Poranna mgła nad Jeziorem Cichowo, las w rdzy i złocie, grzyby, 350-letnia lipa w parku dworskim i ogień w kominku.</p>
         <span class="post-card__cta">Czytaj wpis <span aria-hidden="true">→</span></span>
       </a>
-      <a href="/blog/biskupizna-domachowo-drewniany-kosciol/" class="post-card">
-        <div class="post-card__cover"><picture><source srcset="/assets/blog/rabin-1.webp" type="image/webp" /><img src="/assets/blog/rabin-1.jpg" alt="Drewniany kościół w Rąbiniu — placeholder dla Domachowa" width="1400" height="935" loading="lazy" decoding="async" /></picture></div>
+      <a href="/blog/grzybobranie-okolice-cichowa/" class="post-card">
+        <div class="post-card__cover"><picture><source srcset="/assets/blog/cichowo-4.webp" type="image/webp" /><img src="/assets/blog/cichowo-4.jpg" alt="Las sosnowy w okolicy Cichowa" width="1400" height="935" loading="lazy" decoding="async" /></picture></div>
         <div class="post-meta">
-          <span class="post-meta__kicker">Okolica</span><span>·</span><span>27 maja</span><span>·</span><span>10 min</span>
+          <span class="post-meta__kicker">Aktywne</span><span>·</span><span>27 maja</span><span>·</span><span>9 min</span>
         </div>
-        <h3 class="post-card__title">Biskupizna i drewniany kościół w Domachowie — najstarszy w Polsce</h3>
-        <p class="post-card__excerpt">Drewno ścięte w 1368/69 (dendrochronologia AGH). Średniowieczne freski odkryte 2018. Krajowa lista niematerialnego dziedzictwa.</p>
+        <h3 class="post-card__title">Grzybobranie wokół Cichowa — kiedy, gdzie, co rośnie</h3>
+        <p class="post-card__excerpt">Kalendarz sezonu, gatunki, mylenia (muchomor vs kania), etykieta, suszenie i marynowanie w domku. Lasy Nadleśnictwa Kościan.</p>
         <span class="post-card__cta">Czytaj wpis <span aria-hidden="true">→</span></span>
       </a>
-      <a href="/blog/wschowa-co-zobaczyc-stolica-saska/" class="post-card">
-        <div class="post-card__cover"><picture><source srcset="/assets/blog/rynek-krzywin.webp" type="image/webp" /><img src="/assets/blog/rynek-krzywin.jpg" alt="Rynek miasteczka w Wielkopolsce — placeholder dla Wschowy" width="1400" height="935" loading="lazy" decoding="async" /></picture></div>
+      <a href="/blog/jezioro-cichowo-aktywnosci-wokol/" class="post-card">
+        <div class="post-card__cover"><picture><source srcset="/assets/blog/cichowo-5.webp" type="image/webp" /><img src="/assets/blog/cichowo-5.jpg" alt="Brzeg Jeziora Cichowo z trzcinami" width="1400" height="935" loading="lazy" decoding="async" /></picture></div>
         <div class="post-meta">
-          <span class="post-meta__kicker">Okolica</span><span>·</span><span>27 maja</span><span>·</span><span>10 min</span>
+          <span class="post-meta__kicker">Jeziora</span><span>·</span><span>23 maja</span><span>·</span><span>6 min</span>
         </div>
-        <h3 class="post-card__title">Wschowa — niedoceniona stolica saska 35 km od Cichowa</h3>
-        <p class="post-card__excerpt">August II Mocny rezydował tu 7 razy. Stara Fara z 1493, Kripplein Christi z 1604, najstarsze lapidarium w Polsce.</p>
+        <h3 class="post-card__title">Jezioro Cichowo — kajaki, spacery, wędkarstwo i punkty widokowe</h3>
+        <p class="post-card__excerpt">Mgła o poranku, rdzawy las wokół wody i spinning jesienią. Co robić nad Jeziorem Cichowo, sezon po sezonie.</p>
         <span class="post-card__cta">Czytaj wpis <span aria-hidden="true">→</span></span>
       </a>
     </div>
@@ -550,7 +611,7 @@
     <div class="contact__card">
       <div>
         <div class="eyebrow">Kontakt</div>
-        <h2 class="contact__title">Zarezerwuj <span class="italic-rust">weekend</span> w lesie.</h2>
+        <h2 class="contact__title">Zarezerwuj <span class="italic-rust">jesienny weekend</span> w lesie.</h2>
         <p class="contact__lead">
           Najprościej dzwoniąc albo pisząc smsa. Odpowiadamy natychmiast.
         </p>
